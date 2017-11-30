@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function sumDigPow(a, b) {
+        const result = [];
+        if (a > b) {
+            return;
+        }
+
+        for (let index = a; index < b; index++) {
+            let xx = [...index.toString()];
+            let sort = 0;
+            xx.map((value, index) => {
+                sort += Math.pow(parseInt(value), index + 1);
+            });
+            // for (let i = 0; i < xx.length; i++) {
+            //     sort += Math.pow(parseInt(xx[i]), i + 1);
+            // }
+            if (sort == index) {
+                result.push(index);
+            }
+        }
+        return result;
+    }
+    let xx = sumDigPow(1, 100);
+    console.table(xx);
+</script>
+
+</html>
