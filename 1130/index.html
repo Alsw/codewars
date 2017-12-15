@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
     <title>test</title>
 </head>
 
 <body>
+    <select name="level" required="required" class="form-control" data-widget-cid="widget-6" data-explain="">
+        <option value="undergraduate">本科</option>
+        <option value="specialty">专科</option>
+    </select>
 
 </body>
+<script>
+    $('[name="level"]').change(function() {
+        console.log(this.value);
+    })
+</script>
 <script>
     function sumDigPow(a, b) {
         const result = [];
@@ -24,9 +34,6 @@
             xx.map((value, index) => {
                 sort += Math.pow(parseInt(value), index + 1);
             });
-            // for (let i = 0; i < xx.length; i++) {
-            //     sort += Math.pow(parseInt(xx[i]), i + 1);
-            // }
             if (sort == index) {
                 result.push(index);
             }

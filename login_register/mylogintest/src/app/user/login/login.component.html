@@ -1,0 +1,11 @@
+<form #form="ngForm" (ngSubmit)="form.form.valid && doLogin()">
+    <div>
+        <label for="userName">用户名：</label>
+        <input type="text" name="userName" [(ngModel)]="user.userName" placeholder="请输入用户名">
+    </div>
+    <div>
+        <label for="password">密码：</label>
+        <input type="password" name="password" [(ngModel)]="user.password" id="" placeholder="请输入密码">
+    </div>
+    <button type="submit" class="btn btn-success">登录</button>
+</form>
