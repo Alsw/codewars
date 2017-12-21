@@ -1,0 +1,34 @@
+{
+    "productList": [{
+            "title": "壹纷趣积分商城H5",
+            "discription": "使用ionic3+angular3开发，路由管理，异步加载数据，下拉加载数据，本地缓存商品信息，使用webp格式压缩图片，与native交互获取用户信息，调起功能，采用rx.js优化http请求，统一处理后台返回数据，模块化处理等",
+            "imgUrl": "assets/images/score.jpg"
+        },
+        {
+            "title": "壹分期商户端H5",
+            "discription": "使用angular1.58+jquery开发，调用百度地图api，实现商户下单定位功能，优化ajax，使用observable优化搜索订单功能，同时实现了图片压缩，转base64上传，保存用户信息到cookie与llocalStorage,实现了用户登录24小时缓存等等",
+            "imgUrl": "assets/images/h5.jpg"
+        },
+        {
+            "title": "壹分期用户模块H5",
+            "discription": "使用angular4 开发，集成了百度地图，使用了模板驱动表单实现了用户的注册，邀请注册，礼品兑换等等，使用懒加载优化，分为三个模块",
+            "imgUrl": "assets/images/qrcode.jpg"
+        },
+        {
+            "title": "H5静态页",
+            "discription": "为满足业务需求，实现UI设计的静态H5页面，保证了兼容性，在微信，qq端的下载功能等等",
+            "imgUrl": "assets/images/download.jpg"
+        },
+        {
+            "title": "华夏壹分期后台管理系统PC",
+            "discription": "使用angular1+jquery,主要业务为壹分期，壹纷趣的管理功能，主要参与了其中部分功能",
+            "imgUrl": "assets/images/bops.jpg"
+        },
+        {
+            "title": "店商平台",
+            "discription": "使用bootstrop+jquery开发，主要参与了店商前台的维护工作与后台管理系统的实现",
+            "imgUrl": "assets/images/ds.jpg"
+        }
+    ]
+
+}

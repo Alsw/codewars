@@ -1,0 +1,21 @@
+.padding-f {
+    margin-bottom: 5px;
+}
+
+.prf_overlay:hover {
+    display: block;
+}
+
+.prf_overlay {
+    background: #000;
+    color: #fff;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    padding: 0 2em;
+    display: block !important;
+    opacity: 0;
+}

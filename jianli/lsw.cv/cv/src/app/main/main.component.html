@@ -1,0 +1,112 @@
+<section id="home" class="prf_home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-1"></div>
+            <div class="col-md-8 col-sm-10">
+                <h1 class="prf_home_title">罗松伟</h1>
+                <h2 class="prf_home_det">web前端工程师</h2>
+                <p>这是基于angualr4和bootstrop的一份个人简历，使用json,http,observable模拟前后端交互，希望有机会加入贵公司一起工作生活</p>
+                <a href="#skill" class="btn btn-default prf_btn_lg">Let's Begin</a>
+            </div>
+            <div class="col-md-2 col-sm-1"></div>
+        </div>
+    </div>
+</section>
+<!-- skill -->
+<section id="skill" class="prf_skill text-center">
+    <div class="container">
+        <div class="section_title center">
+            <h2>My Skill</h2>
+            <hr/>
+        </div>
+        <div class="row">
+            <app-skill [skillGradeNumber]="skillModel.skillGradeNumber" [skillName]="skillModel.skillName" *ngFor="let skillModel of mySkillModels"></app-skill>
+        </div>
+    </div>
+</section>
+<!-- project -->
+<section id="project" class="prf_project text-center">
+    <div class="container">
+        <div class="section_title center">
+            <h2>My project</h2>
+            <hr/>
+        </div>
+        <div class="row">
+            <app-my-product [title]="product.title" [discription]="product.discription" [imgUrl]="product.imgUrl" *ngFor="let product of myProductList"></app-my-product>
+        </div>
+    </div>
+</section>
+<!-- profile -->
+<section id="profile" class="prf_profile">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 col-xs-12">
+                <div class="section_title center text-center">
+                    <h2>My Profile</h2>
+                    <hr/>
+                </div>
+                <p><span class="prf_info">姓名：</span>罗松伟</p>
+                <p><span class="prf_info">性别：</span>男</p>
+                <p><span class="prf_info">出生日期：</span>1995.10.22</p>
+                <p><span class="prf_info">籍贯：</span>河南信阳</p>
+                <p><span class="prf_info">联系方式：</span>15858186233</p>
+                <p><span class="prf_info">邮箱：</span>861868603@qq.com</p>
+                <p><span class="prf_info">个人博客：</span><a href="http://blog.csdn.net/sinat_24554513">http://blog.csdn.net/sinat_24554513</a></p>
+                <p><span class="prf_info">github</span><a href="https://github.com/Alsw">https://github.com/Alsw</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about -->
+<section id="about" class="prf_about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-6 col-sm-6 col-xs-12">
+                <div class="section_title center text-center">
+                    <h2>About</h2>
+                    <hr/>
+                </div>
+                <div class="prf_about_title">
+                    <h2>个人介绍</h2>
+                    <h1 class="text_red">好好学习中的一个小开发</h1>
+                </div>
+                <p>作为一个刚刚工作了一年不到的新人，工作经验尚浅，但是有信心有能力通过快速学习掌握知识空白。兴趣爱好有看书，打游戏，美食等等，性格外向，很快能跟同事打成一片，工作态度比较严谨，能够保质保量的完成任务。</p>
+                <p>主要技术栈为angular,使用typescript/es6转es5。在业余时间也简单研究过react和vue，能快速学习来胜任这两门语言的工作</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- connect -->
+<section id="connect" class="prf_connect">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section_title center text-center">
+                    <h2>Connect</h2>
+                    <hr/>
+                </div>
+                <div class="col-xs-offset-1 col-xs-10">
+                    <form action="#" method="post">
+                        <div class="col-sm-6 col-xs-12">
+                            <label for="uemail"></label>
+                            <input type="text" class="form-control" id="uname" placeholder="姓名" />
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <label for="uname"></label>
+                            <input type="email" class="form-control" id="uemail" placeholder="邮箱地址" />
+                        </div>
+                        <div class="col-xs-12">
+                            <label for="usub"></label>
+                            <input type="text" id="usub" class="form-control" placeholder="主题" />
+                            <label for="umeg"></label>
+                            <textarea id="umeg" cols="30" rows="10" class="form-control" placeholder="主要内容"></textarea>
+                        </div>
+                        <div class="col-xs-offset-2 col-xs-8">
+                            <input type="submit" class="btn btn-block btn-primary sub_btn" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

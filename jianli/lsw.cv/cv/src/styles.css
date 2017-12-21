@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+.grade {
+    display: inline-block;
+    line-height: 152px;
+    z-index: 2;
+    font-size: 1.4em;
+    color: #e87e04;
+}
