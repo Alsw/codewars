@@ -33,18 +33,20 @@ export class SearchComponent implements OnInit {
     $term.switchMap((item) => this.searchService.search(item)).subscribe(res => {
       console.log(res);
     });
-    const timers2 = this.timer2.asObservable();
-    this.timer1.concat(this.timer2, timers2).take(2).subscribe(res => console.log(res));
+    // const timers2 = this.timer2.asObservable();
+    // this.timer1.concat(this.timer2, timers2).take(2).subscribe(res => console.log(res));
   }
 
   ngOnInit() {
     this.subject.subscribe(res => console.log(res));
-    this.timer2.next(2);
+    // this.timer2.next(2);
     // this.timer2.complete();
   }
   search(value) {
-    // this.subject.next(value);
-    // this.subject.next(0);
-    this.timer1.next(1);
+    this.subject.next(value);
+    this.subject.next(0);
+    this.subject.complete();
+    this.subject.next(1);
+    // this.timer1.next(1);
   }
 }
