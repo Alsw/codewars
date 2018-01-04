@@ -3,8 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { SearchService } from './search.service';
 import { FormControl } from '@angular/forms';
 
-import { Observable } from 'rxjs/Rx';
-
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/switchMap';
@@ -13,7 +11,7 @@ import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/operator/concat';
 import 'rxjs/add/operator/take';
 import 'rxjs/add/observable/interval';
-
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-search',
@@ -27,7 +25,6 @@ export class SearchComponent implements OnInit {
   subject = new Subject();
   timer1 = new Subject();
   timer2 = new Subject();
-  timer3 = new Observable();
   constructor(private searchService: SearchService) {
     const $term = this.term.valueChanges.debounceTime(400).distinctUntilChanged();
     $term.subscribe(res => {
