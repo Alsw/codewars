@@ -1,7 +1,7 @@
-<div class="col-sm-4 col-xs-12 padding-f">
+<div class="col-sm-4 col-xs-12 padding-f" (click)="clicks()">
     <div class="prf_thumb">
         <img [src]="imgUrl" class="img-responsive" />
-        <div class="prf_overlay" appShowMessage>
+        <div class="prf_overlay" [@State]="status">
             <h3>{{title}}</h3>
             <p>{{discription}}</p>
         </div>

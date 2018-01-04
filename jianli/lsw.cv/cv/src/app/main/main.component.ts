@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MySkillModel } from './model/mySkill.model';
 import { MyProductModel } from './model/myProduct.model';
 import { MainService } from './mian.serve';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-main',
@@ -27,8 +28,10 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.mainService.productList.map(res => res = res.json()).subscribe(res => {
-      this.myProductList = res.productList;
+    this.mainService.productList.subscribe(res => {
+      console.log(res.json());
+      const response = res.json();
+      this.myProductList = response.productList;
     });
 
   }

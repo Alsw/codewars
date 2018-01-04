@@ -12,13 +12,11 @@ export class ShowMessageDirective {
     this._renderer = renderer;
   }
 
+
   @HostListener('mouseenter')
   onMouseEnter() {
+    console.log(0);
     this._renderer.setElementStyle(this._domElem, 'opacity', '0.5');
   }
 
-  @HostListener('mouseleave')
-  onMouseLeave() {
-    this._renderer.setElementStyle(this._domElem, 'opacity', '0');
-  }
 }

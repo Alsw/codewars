@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
@@ -10,7 +11,8 @@ import { MainComponent } from './main/main.component';
 import { SkillComponent } from './main/skill/skill.component';
 import { MyProductComponent } from './main/my-product/my-product.component';
 import { ShowMessageDirective } from './main/my-product/show-message.directive';
-
+import 'rxjs/add/operator/map';
+import { CloseMessageDirective } from './main/my-product/close-message.directive';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,11 @@ import { ShowMessageDirective } from './main/my-product/show-message.directive';
     MainComponent,
     SkillComponent,
     MyProductComponent,
-    ShowMessageDirective
+    ShowMessageDirective,
+    CloseMessageDirective
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, BrowserAnimationsModule,
     HttpModule
   ],
   providers: [],

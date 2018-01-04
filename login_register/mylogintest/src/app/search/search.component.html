@@ -1,0 +1,6 @@
+<label for="search">search</label>
+<!-- <input [FormControl]='term' type="text" (keyup)="search(term.value)" id="search"> -->
+<input type="text" [formControl]="term" (keyup)="search(term.value)" />
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
