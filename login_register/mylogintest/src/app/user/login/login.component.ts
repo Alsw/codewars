@@ -9,7 +9,7 @@ import { ActivatedRoute, Router, ActivatedRouteSnapshot, RouterState, RouterStat
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  private user: UserModel = new UserModel();
+  public user: UserModel = new UserModel();
   constructor(
     private userService: UserService,
     private router: Router
@@ -24,7 +24,6 @@ export class LoginComponent implements OnInit {
   public doLogin() {
     this.userService.login(this.user);
     this.router.navigateByUrl('user');
-
   }
 
   public doLogout(): void {
